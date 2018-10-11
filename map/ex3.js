@@ -59,7 +59,18 @@ En sortie:
 
  */
 
-function getMoviesFreshness(movies) {
+function getMoviesFreshness(movies) {return movies.map(rated => { 
+    
+    if (rated.rating >=60 && rated.rating <=75){
+      rated.label = "fresh"
+    }else if (rated.rating<60) {
+     rated.label=  "rotten"
+    }else if (rated.rating>75){
+       rated.label= "certified fresh"
+    }
+    return rated
+  })
+    
 }
 
 

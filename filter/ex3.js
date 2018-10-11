@@ -23,8 +23,7 @@ Sortie attendue:
 
  */
 
-function keepStarks(names) {
-}
+function keepStarks(names) {return names.filter(winterfel => winterfel.endsWith('Stark'))}
 
 // Ne pas modifier l'export
 module.exports = keepStarks;

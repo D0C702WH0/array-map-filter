@@ -42,8 +42,7 @@ En sortie: [
 
  */
 
-function getFoodCategories(foods) {
-}
+function getFoodCategories(foods) {return foods.map(yummy => (yummy.isVegetarian)? yummy.food+` is suitable for vegetarians` : yummy.food+` is not suitable for vegetarians` )}
 
 
 

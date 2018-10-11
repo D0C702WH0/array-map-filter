@@ -51,6 +51,7 @@ Sortie attendue:
 */
 
 function getStudentsPerCurriculum(campuses, curriculumName) {
+  return campuses.filter(e => e.includes('PHP/Symphony')).map(e =>  e.city)
 }
 
 module.exports = getStudentsPerCurriculum;
